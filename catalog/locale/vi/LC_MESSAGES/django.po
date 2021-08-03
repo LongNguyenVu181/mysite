@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-03 09:49+0700\n"
+"POT-Creation-Date: 2021-08-03 12:20+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,6 +35,86 @@ msgstr "Toàn Bộ Sách"
 #: templates/base_generic.html:21
 msgid "AllAuthors"
 msgstr "Toàn Bộ Tác Giả"
+
+#: templates/base_generic.html:31
+msgid "previous"
+msgstr "Trước"
+
+#: templates/base_generic.html:34
+msgid "Page"
+msgstr "Trang"
+
+#: templates/base_generic.html:34
+msgid "of"
+msgstr "trên"
+
+#: templates/base_generic.html:37
+msgid "next"
+msgstr "Tiếp theo"
+
+#: templates/catalog/author_detail.html:5
+msgid "Name:"
+msgstr "Tên"
+
+#: templates/catalog/author_detail.html:8
+msgid "Books:"
+msgstr "Sách: "
+
+#: templates/catalog/author_list.html:5
+msgid "Author List:"
+msgstr "Danh sách tác giả "
+
+#: templates/catalog/author_list.html:15
+msgid "There is no author information"
+msgstr "Không có thông tin tác giả"
+
+#: templates/catalog/book_detail.html:5
+msgid "Title:"
+msgstr "Tên"
+
+#: templates/catalog/book_detail.html:7
+msgid "Author:"
+msgstr "Tác Giả: "
+
+#: templates/catalog/book_detail.html:8
+msgid "Summary:"
+msgstr "Tóm tắt"
+
+#: templates/catalog/book_detail.html:9
+msgid "ISBN:"
+msgstr ""
+
+#: templates/catalog/book_detail.html:10
+msgid "Language:"
+msgstr "Ngôn ngữ"
+
+#: templates/catalog/book_detail.html:11
+msgid "Genre:"
+msgstr "Thể loại"
+
+#: templates/catalog/book_detail.html:14
+msgid "Copies:"
+msgstr "Bản Sao: "
+
+#: templates/catalog/book_detail.html:22
+msgid "Due to be returned:"
+msgstr "Ngày hoàn trả"
+
+#: templates/catalog/book_detail.html:24
+msgid "Imprint:"
+msgstr "Bản in"
+
+#: templates/catalog/book_detail.html:25
+msgid "ID:"
+msgstr ""
+
+#: templates/catalog/book_list.html:5
+msgid "Book List"
+msgstr "Danh sách các cuốn sách: "
+
+#: templates/catalog/book_list.html:15
+msgid "There are no books in the library."
+msgstr "Không có sách trong thư viện"
 
 #: templates/index.html:5
 msgid "LocalLibraryHome"

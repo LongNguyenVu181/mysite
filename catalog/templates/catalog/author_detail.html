@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block content %}
+    <h1>{% trans 'Name:' %} {{ author }}</h1>
+    <p>{{ author.date_of_birth }}-{{author.date_of_death}}</p>
+    <div class = 'detail-list'>
+        <h4>{% trans 'Books:' %}</h4>
+        <ul>
+            {% for book in author.book_set.all %}
+                <li>
+                <a href = "{{ book.get_absolute_url }}">{{book.title}}</a>
+                :{{book.summary}}
+                </li>
+            {% endfor %}
+        <ul>
+    </div>
+{% endblock %}
