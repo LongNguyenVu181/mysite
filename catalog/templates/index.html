@@ -11,5 +11,11 @@
     <li><strong>{% trans 'Copies' %}</strong> {{ num_instances }}</li>
     <li><strong>{% trans 'CopiesAval' %}</strong> {{ num_instances_available }}</li>
     <li><strong>{% trans 'Authors' %}</strong> {{ num_authors }}</li>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+      <p>{% trans 'You have visited this page ' %}{{ num_visits }} {% trans 'time' %}{{ num_visits|pluralize}}.</p>
+    {% else %}
+      <p>{% trans 'You have visited this page ' %}{{ num_visits }} {% trans 'time' %}.</p>
+    {% endif %}
   </ul>
 {% endblock %}
