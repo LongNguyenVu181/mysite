@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-04 06:26+0000\n"
+"POT-Creation-Date: 2021-08-05 03:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: catalog/forms.py:7
+msgid "Enter a date between now and 4 weeks (default 3)."
+msgstr ""
+
+#: catalog/forms.py:14
+msgid "Invalid date - renewal in past"
+msgstr ""
+
+#: catalog/forms.py:18
+msgid "Invalid date - renewal more than 4 weeks ahead"
+msgstr ""
 
 #: catalog/templates/base_generic.html:6
 msgid "Local Library"
@@ -38,40 +50,55 @@ msgstr "All Authors"
 msgid "User:"
 msgstr ""
 
-#: catalog/templates/base_generic.html:32
+#: catalog/templates/base_generic.html:31
 msgid "My Borrowed"
 msgstr ""
 
-#: catalog/templates/base_generic.html:36
+#: catalog/templates/base_generic.html:32
 msgid "Logout"
 msgstr ""
 
-#: catalog/templates/base_generic.html:42
+#: catalog/templates/base_generic.html:34
 msgid "Login"
 msgstr ""
 
-#: catalog/templates/base_generic.html:50
+#: catalog/templates/base_generic.html:40
 msgid "Staff"
 msgstr ""
 
-#: catalog/templates/base_generic.html:53
+#: catalog/templates/base_generic.html:42
 msgid "All borrowed"
 msgstr ""
 
-#: catalog/templates/base_generic.html:69
+#: catalog/templates/base_generic.html:55
 msgid "previous"
 msgstr ""
 
-#: catalog/templates/base_generic.html:73
+#: catalog/templates/base_generic.html:58
 msgid "Page"
 msgstr ""
 
-#: catalog/templates/base_generic.html:73
+#: catalog/templates/base_generic.html:58
 msgid "of"
 msgstr ""
 
-#: catalog/templates/base_generic.html:77
+#: catalog/templates/base_generic.html:61
 msgid "next"
+msgstr ""
+
+#: catalog/templates/catalog/author_confirm_delete.html:5
+#, fuzzy
+#| msgid "AllAuthors"
+msgid "Delete Author"
+msgstr "All Authors"
+
+#: catalog/templates/catalog/author_confirm_delete.html:6
+msgid "Are you sure you want to delete the author:"
+msgstr ""
+
+#: catalog/templates/catalog/author_confirm_delete.html:9
+#: catalog/templates/catalog/book_confirm_delete.html:9
+msgid "Yes, delete."
 msgstr ""
 
 #: catalog/templates/catalog/author_detail.html:5
@@ -82,12 +109,26 @@ msgstr ""
 msgid "Books:"
 msgstr ""
 
+#: catalog/templates/catalog/author_form.html:8
+#: catalog/templates/catalog/book_form.html:8
+#: catalog/templates/catalog/book_renew_librarian.html:14
+msgid "Submit"
+msgstr ""
+
 #: catalog/templates/catalog/author_list.html:5
 msgid "Author List:"
 msgstr ""
 
 #: catalog/templates/catalog/author_list.html:15
 msgid "There is no author information"
+msgstr ""
+
+#: catalog/templates/catalog/book_confirm_delete.html:5
+msgid "Delete Book"
+msgstr ""
+
+#: catalog/templates/catalog/book_confirm_delete.html:6
+msgid "Are you sure you want to delete the book:"
 msgstr ""
 
 #: catalog/templates/catalog/book_detail.html:5
@@ -138,13 +179,29 @@ msgstr ""
 msgid "There are no books in the library."
 msgstr ""
 
+#: catalog/templates/catalog/book_renew_librarian.html:5
+msgid "Renew:"
+msgstr ""
+
+#: catalog/templates/catalog/book_renew_librarian.html:6
+msgid "Borrower:"
+msgstr ""
+
+#: catalog/templates/catalog/book_renew_librarian.html:7
+msgid "Due date:"
+msgstr ""
+
 #: catalog/templates/catalog/bookinstance_list_all.html:5
 #, fuzzy
 #| msgid "AllBooks"
 msgid "All Borrowed Books"
 msgstr "All Books"
 
-#: catalog/templates/catalog/bookinstance_list_all.html:15
+#: catalog/templates/catalog/bookinstance_list_all.html:12
+msgid "Renew"
+msgstr ""
+
+#: catalog/templates/catalog/bookinstance_list_all.html:18
 #: catalog/templates/catalog/bookinstance_list_borrowed_user.html:17
 msgid "There are no books borrowed."
 msgstr ""
