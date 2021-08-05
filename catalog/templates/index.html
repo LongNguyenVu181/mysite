@@ -2,20 +2,20 @@
 {% load i18n %}
 
 {% block content %}
-  <h1>{% trans 'LocalLibraryHome' %}</h1>
-  <p>{% trans 'Welcome' %} <em>{% trans 'Mozilla Developer Network' %}</em>!</p>
-  <h2>{% trans 'Dynamiccontent' %}</h2>
-  <p>{% trans 'ReadCount' %}</p>
-  <ul>
-    <li><strong>{% trans 'Books' %}</strong> {{ num_books }}</li>
-    <li><strong>{% trans 'Copies' %}</strong> {{ num_instances }}</li>
-    <li><strong>{% trans 'CopiesAval' %}</strong> {{ num_instances_available }}</li>
-    <li><strong>{% trans 'Authors' %}</strong> {{ num_authors }}</li>
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-      <p>{% trans 'You have visited this page ' %}{{ num_visits }} {% trans 'time' %}{{ num_visits|pluralize}}.</p>
-    {% else %}
-      <p>{% trans 'You have visited this page ' %}{{ num_visits }} {% trans 'time' %}.</p>
-    {% endif %}
-  </ul>
+    <h1>{% trans 'LocalLibraryHome' %}</h1>
+    <p>{% trans 'Welcome' %} <em>{% trans 'Mozilla Developer Network' %}</em>!</p>
+    <h2>{% trans 'Dynamiccontent' %}</h2>
+    <p>{% trans 'ReadCount' %}</p>
+    <ul>
+        <li><strong>{% trans 'Books' %}</strong> {{ num_books }}</li>
+        <li><strong>{% trans 'Copies' %}</strong> {{ num_instances }}</li>
+        <li><strong>{% trans 'CopiesAval' %}</strong> {{ num_instances_available }}</li>
+        <li><strong>{% trans 'Authors' %}</strong> {{ num_authors }}</li>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'en' %}
+            <p>{% trans 'You have visited this page ' %}{{ num_visits }} {% trans 'time' %}{{ num_visits|pluralize}}.</p>
+        {% else %}
+            <p>{% trans 'You have visited this page ' %}{{ num_visits }} {% trans 'time' %}.</p>
+        {% endif %}
+    </ul>
 {% endblock %}
